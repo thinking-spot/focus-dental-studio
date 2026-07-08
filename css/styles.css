@@ -16,9 +16,10 @@
   --cloud: #f4f7fa;
   --mist: #e8eef4;
   --white: #ffffff;
-  --radius: 14px;
-  --shadow: 0 10px 30px rgba(43, 42, 92, 0.10);
-  --shadow-soft: 0 4px 14px rgba(43, 42, 92, 0.08);
+  --radius: 10px;
+  --border: #e2e8f0;
+  --shadow: 0 4px 12px -2px rgba(43, 42, 92, 0.08), 0 2px 4px -2px rgba(43, 42, 92, 0.06);
+  --shadow-soft: 0 1px 3px rgba(43, 42, 92, 0.07), 0 1px 2px rgba(43, 42, 92, 0.05);
   --font: "Source Sans 3", "Segoe UI", Arial, sans-serif;
   --font-head: "Montserrat", "Segoe UI", Arial, sans-serif;
 }
@@ -81,7 +82,7 @@ a { color: var(--blue-dark); }
 /* ---------- Header / nav ---------- */
 header.site-header {
   background: var(--white);
-  box-shadow: var(--shadow-soft);
+  border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -126,8 +127,9 @@ nav.main-nav a.nav-cta {
   background: var(--green);
   color: var(--white);
   padding: 10px 20px;
-  border-radius: 999px;
+  border-radius: var(--radius);
   border-bottom: none;
+  box-shadow: var(--shadow-soft);
   transition: background 0.15s;
 }
 
@@ -222,15 +224,16 @@ nav.main-nav a.nav-cta:hover { background: var(--green-dark); color: var(--white
 /* ---------- Buttons ---------- */
 .btn {
   display: inline-block;
-  padding: 14px 32px;
-  border-radius: 999px;
-  font-weight: 700;
-  font-size: 1rem;
+  padding: 12px 26px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 0.98rem;
   text-decoration: none;
-  transition: transform 0.15s, background 0.15s, box-shadow 0.15s;
+  box-shadow: var(--shadow-soft);
+  transition: background 0.15s, box-shadow 0.15s, border-color 0.15s;
 }
 
-.btn:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.btn:hover { box-shadow: var(--shadow); }
 
 .btn-primary { background: var(--green); color: var(--white); }
 .btn-primary:hover { background: var(--green-dark); }
@@ -239,11 +242,11 @@ nav.main-nav a.nav-cta:hover { background: var(--green-dark); color: var(--white
 .btn-secondary:hover { background: var(--blue-dark); }
 
 .btn-outline {
-  background: rgba(255, 255, 255, 0.55);
+  background: var(--white);
   color: var(--navy);
-  border: 2px solid var(--navy);
+  border: 1px solid var(--border);
 }
-.btn-outline:hover { background: var(--white); }
+.btn-outline:hover { background: var(--cloud); border-color: #c8d4e0; }
 
 .btn-row {
   display: flex;
@@ -308,14 +311,15 @@ h2.section-title {
 
 .card {
   background: var(--white);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 36px 30px;
   box-shadow: var(--shadow-soft);
   text-align: center;
-  transition: transform 0.18s, box-shadow 0.18s;
+  transition: box-shadow 0.18s, border-color 0.18s;
 }
 
-.card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+.card:hover { box-shadow: var(--shadow); border-color: #c8d4e0; }
 
 .card .icon {
   width: 64px;
@@ -435,6 +439,7 @@ ul.checklist li::before {
 
 .team-card {
   background: var(--white);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow-soft);
@@ -465,10 +470,11 @@ ul.checklist li::before {
 
 .service-card {
   background: var(--white);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow-soft);
   padding: 32px 28px;
-  border-top: 5px solid var(--blue);
+  border-top: 3px solid var(--blue);
 }
 
 .service-card:nth-child(even) { border-top-color: var(--green); }
@@ -510,6 +516,7 @@ ul.checklist li::before {
 
 .info-block {
   background: var(--white);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow-soft);
   padding: 30px 32px;
