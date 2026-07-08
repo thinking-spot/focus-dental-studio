@@ -1,0 +1,9 @@
+# Preserve old WordPress URL slugs (SEO) — Netlify/Cloudflare Pages format
+/meet-the-team/  /meet-the-team.html  301
+/meet-the-team   /meet-the-team.html  301
+/services/       /services.html       301
+/services        /services.html       301
+/focus-care/     /focus-care.html     301
+/focus-care      /focus-care.html     301
+/contact/        /contact.html        301
+/contact         /contact.html        301
