@@ -96,7 +96,7 @@ header.site-header {
   gap: 18px;
 }
 
-.site-header .logo img { height: 58px; width: auto; }
+.site-header .logo img { height: 67px; width: auto; }
 
 nav.main-nav ul {
   display: flex;
