@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    { "source": "/meet-the-team", "destination": "/meet-the-team.html", "permanent": true },
+    { "source": "/meet-the-team/", "destination": "/meet-the-team.html", "permanent": true },
+    { "source": "/services", "destination": "/services.html", "permanent": true },
+    { "source": "/services/", "destination": "/services.html", "permanent": true },
+    { "source": "/focus-care", "destination": "/focus-care.html", "permanent": true },
+    { "source": "/focus-care/", "destination": "/focus-care.html", "permanent": true },
+    { "source": "/contact", "destination": "/contact.html", "permanent": true },
+    { "source": "/contact/", "destination": "/contact.html", "permanent": true },
+    { "source": "/privacy-policy", "destination": "/privacy-policy.html", "permanent": true },
+    { "source": "/privacy-policy/", "destination": "/privacy-policy.html", "permanent": true }
+  ]
+}
