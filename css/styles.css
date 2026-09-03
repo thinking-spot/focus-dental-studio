@@ -172,7 +172,7 @@ section.hero {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(11, 110, 50, 0.86);
+  background: linear-gradient(135deg, rgba(221, 241, 251, 0.78) 0%, rgba(232, 244, 252, 0.78) 55%, rgba(224, 244, 233, 0.78) 100%);
   text-align: center;
   padding: 28px 0 32px;
 }
@@ -183,28 +183,25 @@ section.hero {
   letter-spacing: -0.5px;
   line-height: 1.15;
   margin-bottom: 10px;
-  color: var(--white);
+  color: var(--navy);
 }
 
 .hero-band .tagline {
   font-size: clamp(1.05rem, 2.5vw, 1.35rem);
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.92);
+  color: var(--navy);
   max-width: 640px;
   margin: 0 auto 20px;
 }
 
-.hero-band .btn { font-size: 0.85rem; }
-
-.hero-band .btn-primary { background: var(--white); color: var(--green-dark); }
-.hero-band .btn-primary:hover { background: var(--cloud); }
+.hero-band .btn { font-size: 0.91rem; }
 
 .hero-band .btn-outline {
   background: transparent;
-  color: var(--white);
-  border: 2px solid rgba(255, 255, 255, 0.75);
+  color: var(--navy);
+  border: 2px solid rgba(43, 42, 92, 0.45);
 }
-.hero-band .btn-outline:hover { background: rgba(255, 255, 255, 0.12); border-color: var(--white); }
+.hero-band .btn-outline:hover { background: rgba(255, 255, 255, 0.5); border-color: var(--navy); }
 
 /* Page hero (interior pages) */
 .page-hero {
