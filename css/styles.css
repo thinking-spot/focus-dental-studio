@@ -194,6 +194,8 @@ section.hero {
   margin: 0 auto 20px;
 }
 
+.hero-band .btn { font-size: 0.85rem; }
+
 .hero-band .btn-primary { background: var(--white); color: var(--green-dark); }
 .hero-band .btn-primary:hover { background: var(--cloud); }
 
