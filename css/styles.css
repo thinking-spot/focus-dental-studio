@@ -492,6 +492,8 @@ ul.checklist li::before {
   margin-bottom: 14px;
 }
 
+.service-card ul + h3 { margin-top: 20px; }
+
 .service-card ul { list-style: none; display: grid; gap: 8px; }
 
 .service-card li {
