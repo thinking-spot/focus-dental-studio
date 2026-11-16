@@ -312,6 +312,8 @@ h2.section-title {
   margin-top: 44px;
 }
 
+.card-grid-2 { grid-template-columns: repeat(2, 1fr); }
+
 .card {
   background: var(--white);
   border: 1px solid var(--border);
@@ -662,7 +664,7 @@ footer.site-footer {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.3fr 1fr 1fr 1.1fr;
+  grid-template-columns: 1.3fr 1fr 1fr;
   gap: 44px;
   padding-bottom: 44px;
 }
@@ -698,7 +700,8 @@ footer.site-footer {
   .card-grid, .service-grid, .team-grid { grid-template-columns: repeat(2, 1fr); }
   .split, .contact-grid, .doctor-feature { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
-  .doctor-feature img { max-width: 420px; }
+  .doctor-feature { grid-template-columns: minmax(0, 1fr); }
+  .doctor-feature img { max-width: min(420px, 100%); }
   .service-detail-item summary { padding: 20px 24px; }
   .service-detail-body { padding: 2px 24px 24px; }
   .faq-grid { grid-template-columns: 1fr; }
